@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirstApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" type="text/css" href="<%= asset_path "stylesheets/bootstrap.css.erb" %>"> 
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<script type="text/javascript" src="<%= asset_path "stylesheets/bootstrap.css.erb" %>"></script>
+</body>
+</html>
