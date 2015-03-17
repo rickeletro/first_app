@@ -6,19 +6,33 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body style="background:black;color:red;">
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<%= yield :sidebar %>
-		</div>
-		<div class="col-md-9"> 
-			<%= yield %>
+<body>
+<div class="container" style="padding-top:5%;">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					<%= yield :sidebar %>
+				</div>
+				<div class="col-md-9 column">
+					<div class="jumbotron">
+						<h1>
+							PORTAL DE NOTÍCIAS
+						</h1>
+						<p>
+							Aprendendo a construir um layout com partials em Ruby on rails.
+						</p>
+						<p>
+							<a class="btn btn-primary btn-large" href="#">Leia mais</a>
+						</p>
+					</div>
+					<div class="row">
+						<%= yield %>												
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-
-
 </body>
 </html>
