@@ -4,7 +4,7 @@
   <title>FirstApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>  
 </head>
 <body>
 <div class="container" style="padding-top:5%;">
@@ -34,5 +34,8 @@
 		</div>
 	</div>
 </div>
+<div style="width:100%;">
+</div>
+	<%= yield :footer %>
 </body>
 </html>
