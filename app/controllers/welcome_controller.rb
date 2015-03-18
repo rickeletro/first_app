@@ -5,4 +5,6 @@ class WelcomeController < ApplicationController
 	def black
 		render :layout => 'application_black'		
 	end
+	def about
+	end
 end
