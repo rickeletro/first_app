@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root :to => 'welcome#index', :as => :index
   match 'black' => 'welcome#black', :via => :get, :as => :black
   match 'about' => 'welcome#about', :via => :get, :as => :about
+  match 'contact' => 'welcome#contact', :via => :get, :as => :contact
   
 
   # The priority is based upon order of creation: first created -> highest priority.
